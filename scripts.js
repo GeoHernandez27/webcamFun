@@ -56,6 +56,7 @@ function paintToCanvas() {
 
       case "green-screen":
         pixels = greenScreen(pixels);
+        ctx.globalAlpha = 1;
         ctx.putImageData(pixels, 0, 0);
         greenScreenSelector.classList.remove("hidden");
         break;
@@ -103,7 +104,7 @@ function blueEffect(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i + 0] = pixels.data[i + 0] * 0.5; //red
     pixels.data[i + 1] = pixels.data[i + 1] - 50; //green
-    pixels.data[i + 2] = pixels.data[i + 2] + 100; //blue
+    pixels.data[i + 2] = pixels.data[i + 2] + 80; //blue
   }
   return pixels;
 }
