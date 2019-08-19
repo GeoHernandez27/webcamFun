@@ -16,6 +16,7 @@ html {
   max-width: 150rem;
   margin: 2rem auto;
   border-radius: 2px;
+  
 }
 
 /*clearfix*/
@@ -51,6 +52,25 @@ html {
   padding: 0.8rem 0.8rem 2.5rem 0.8rem;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
   background: white;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+  background-color: #ffc600;
+  text-decoration: none;
+
 }
 
 .strip a:nth-child(5n+1) img { transform: rotate(10deg); }
